@@ -1232,7 +1232,7 @@
       const container = document.getElementById("questionSection");
       const questions = faqData.filter(item => item.topCategory === topCat && item.scenario === scenario && item.category === category);
       // 가운데 영역 상단 텍스트 수정
-      container.innerHTML = "<p class='question-label'>2️⃣ 파트너 질문 선택</p>" + 
+      container.innerHTML = "<p class='question-label'>2️⃣ 문의 선택</p>" + 
         questions.map(item => 
           `<div class="faq-item" onclick="selectQuestion(this, '${item.topCategory}', '${item.scenario}', '${item.category}', '${item.question}', '${item.response}', '${item.imageAbove || ""}', '${item.commentAbove || ""}', '${item.imageBelow || ""}', '${item.commentBelow || ""}')">
              ${item.question}
